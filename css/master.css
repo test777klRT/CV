@@ -1,6 +1,6 @@
 
 body{
-  background-color: ##f1f0f2;
+  background-color: white;
 }
 main{
   background-color:#D9D5D2;
@@ -8,10 +8,18 @@ main{
   font-size: 16px;
   font-weight: normal;
   font-family: 'Roboto', sans-serif;
-  margin-top: : auto;
+  /* margin-top: : auto; */
   margin: auto;
   max-width: 750px;
   padding: 10px;
+}
+nav{
+  margin: auto;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f0f2;
+  width: 100%;
 }
 .copyright{
   font-size: 10px;
@@ -26,19 +34,88 @@ a{
   text-decoration: none;
   color: #0B090D;
 }
+a:hover{
+  color: #3f3f40;
+}
 #header{
   background-color: #088c37;
   margin:auto;
-  max-width: 750px;
-  padding: 10px;
+  max-width: 770px;
+  /* padding: 10px; */
+  font-family: 'Roboto', sans-serif;
 }
 
 #header p{
   margin: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-left: 10px;
   color: #f1f0f2;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+#header table{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  table-layout: fixed;
+}
+.nav_btn:hover{
+  background-color: #D9D5D2;
+  border-radius: 3px;
+}
+#contact  input:not([type="submit"]),
+#contact textarea{
+  border: none;
+  border-bottom: 1px solid #3f3f40;
+  background-color: #f1f0f2;
+  margin-bottom: 10px;
+  font-family: inherit;
+  outline-color: #f1f0f2;
+  border-radius: 3px;
+}
+.btn_sm{
+  border: none;
+  border-bottom: 1px solid #3f3f40;
+  border-right: 1px solid #3f3f40;
+  background-color: #f1f0f2;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px #3f3f40;
+  display: inline-block;
+  padding: 1px 6px;
+}
+.btn_sm:hover{
+  background-color: #f1f8f2;
+}
+.btn_sm:active{
+  background-color: #f1f0f2;
+  box-shadow: none;
+}
+
+
+#contact textarea{
+  width: 320px;
+  height: 180px;
+}
+.edc_tab tr th:nth-child(1){
+width: 25%;
+}
+.edc_tab tr th:nth-child(3){
+width: 15%;
+}
+.edc_tab td{
+  vertical-align: text-top;
+}
+.edc_tab caption{
+  text-align: left;
+}
+.edc_tab th{
+  vertical-align: text-top;
+}
+.edc_tab tr td:nth-child(3){
+  text-align: center;
 }
