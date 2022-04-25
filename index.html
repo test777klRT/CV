@@ -13,10 +13,32 @@
   <body>
     <!-- header start -->
         <div id="header" class="section">
-            <p>Stanislav Fedenev</p>
-            <p>automation engineer</p>
+            <p>Stanislav Fedenev
+            <br>automation engineer</p>
+            <nav class="navigation">
+              <table>
+                <tr>
+                  <td><a href="My_Main_Skills.html"><div class="nav_btn">My Main Skills</div></a></td>
+                  <td><a href="My_Education.html"><div class="nav_btn">My Education</div></a></td>
+                  <td><a href="#contact"><div class="nav_btn">Contact Me</div></a></td>
+                  <td><a href="#Follow_Me"><div class="nav_btn">Follow Me</div></a></td>
+                </tr>
+              </table>
+            </nav>
         </div>
     <!-- header end -->
+    <!-- nav start -->
+    <!-- <nav class="navigation">
+      <table>
+        <tr>
+          <td><a href="My_Main_Skills.html"><input type="button" value = "My Main Skills"></a></td>
+          <td><a href="My_Education.html"><input type="button" value = "My Education"></a></td>
+          <td><a href="#contact"><input type="button" value = "Contact Me"></a></td>
+          <td><a href="#follow me"><input type="button" value = "Follow Me"></a></td>
+        </tr>
+      </table>
+    </nav> -->
+    <!-- nav end -->
     <main>
     <!-- About Me section start -->
         <div class="section">
@@ -81,18 +103,18 @@
     </div>
     <!-- Media section end -->
     <!-- Form section start -->
-      <div class="section">
+      <div class="section" id = "contact">
         <h2><span>Contact Me</span></h2>
           <form>
             <input name="name" placeholder="Name" type="text" required /><br/>
             <input name="email" placeholder="Email" type="email" required /><br/>
-            <textarea name="message" placeholder="Message" required ></textarea>
-            <input type="submit" value="SEND" class="submit" />
+            <textarea name="message" placeholder="Message" required ></textarea><br/>
+            <input type="submit" value="Send message" class="btn_sm" />
           </form>
       </div>
    <!-- Form section end -->
    <!-- Contacts section start -->
-      <div class="section" id="contacts">
+      <div class="section" id="Follow_Me">
         <h2><span>Follow Me</span></h2>
         <div>
           <a href="https://www.linkedin.com/in/fedenevse/" target="_blank">
