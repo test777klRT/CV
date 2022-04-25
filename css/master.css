@@ -2,6 +2,10 @@
 body{
   background-color: white;
 }
+main p{
+  text-indent: 40px;
+  margin: 8px 0px;
+}
 main{
   background-color:#D9D5D2;
   color: #0B090D;
