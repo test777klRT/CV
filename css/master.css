@@ -25,7 +25,7 @@ nav{
   background-color: #f1f0f2;
   width: 100%;
 }
-.copyright{
+footer{
   font-size: 10px;
   margin:auto;
   max-width: 750px;
@@ -41,25 +41,26 @@ a{
 a:hover{
   color: #3f3f40;
 }
-#header{
-  background-color: #088c37;
+header{
+  background-color: rgba(	8,140,55, 0.8) ;
   margin:auto;
   max-width: 770px;
   /* padding: 10px; */
   font-family: 'Roboto', sans-serif;
 }
 
-#header p{
+header p{
   margin: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 10px;
   color: #f1f0f2;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-weight: normal;
+  letter-spacing: 3px;
   line-height: 2;
+  font-size: 20px;
 }
-#header table{
+header table{
   width: 100%;
   margin: auto;
   text-align: center;
@@ -99,8 +100,6 @@ a:hover{
   background-color: #f1f0f2;
   box-shadow: none;
 }
-
-
 #contact textarea{
   width: 320px;
   height: 180px;
@@ -122,4 +121,70 @@ width: 15%;
 }
 .edc_tab tr td:nth-child(3){
   text-align: center;
+}
+h3{
+  background-color: #f1f0f2;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+.siemesn_tab{
+  background-image: url(pngwing_com.png);
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ra_tab{
+  background-image: url(RA.png);
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.abb_tab{
+  background-image: url(abb.png);
+  background-size: 15%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.edc_tab{
+  background-color: rgba(217, 213, 210, 0.80);
+}
+.section_DIA{
+  background-image: url(AutomationEngineer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 3px;
+}
+.section_HaSE{
+  background-image: url(UrFULogo_Full_Russian.png), url(AutomationEngineer.jpg);
+  background-size: 40% auto, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 3px;
+}
+img{
+  transition: all 1s ease;
+}
+.flex_DCS{
+  display: flex;
+  grid-gap: 5px;
+}
+.flex_DCS_item img{
+  width: 100%;
+  border-radius: 3px;
+}
+.flex_DCS_item img:hover{
+  transform: scale(2,2);
+  border-radius: 0px;
+}
+.section_DCS{
+  background-image: url(AutomationEngineer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 3px;
 }
