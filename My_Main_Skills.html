@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- header start -->
-        <div id="header" class="section">
+        <header>
             <p>Stanislav Fedenev
             <br>automation engineer</p>
             <nav class="navigation">
@@ -21,19 +21,19 @@
                 <tr>
                   <td><a href="index.html"><div class="nav_btn">Main page</div></a></td>
                   <td><a href="My_Education.html"><div class="nav_btn">My Education</div></a></td>
-                  <!-- <td><a href="#contact"><div class="nav_btn">Contact Me</div></a></td>
-                  <td><a href="#Follow_Me"><div class="nav_btn">Follow Me</div></a></td> -->
                 </tr>
               </table>
             </nav>
-        </div>
+        </header>
     <!-- header end -->
     <!--main start-->
     <main>
       <h2>My Main Skills</h2>
+
       <!--Drilling Control Systems and Rig Automation start-->
-      <div class="section">
-          <h3><span>Drilling Control Systems and Rig Automation</span></h3>
+      <h3><span>Drilling Control Systems and Rig Automation</span></h3>
+      <div class="section_DCS">
+      <div class="edc_tab">
           <p>Designed to control the electric drives of the main (mud pumps, winch and rotor) and auxiliary mechanisms of the drilling rig in manual or semi-automatic mode, developed on the basis of a microprocessor programmable controller and performs the following functions:</p>
           <ul>
             <li>input, control and primary processing of input signals;</li>
@@ -44,11 +44,18 @@
             <li>formation and issuance of control actions and messages about failures and deviations of parameters;</li>
             <li>calculation of operating time of the main equipment;</li>
           </ul>
+          <div class="flex_DCS">
+            <div class="flex_DCS_item TDC"><img src="img/tdc.jpeg" alt="Top_drive"></div>
+            <div class="flex_DCS_item DW"><img src="img/dw.jpeg" alt="Top_drive"></div>
+            <div class="flex_DCS_item MP"><img src="img/mp.jpeg" alt="Top_drive"></div>
+          </div>
+      </div>
       </div>
       <!--Drilling Control Systems and Rig Automation end-->
       <!--Frequency converters start-->
-      <div class="section">
-        <h3><span>Frequency converters</span></h3>
+      <h3><span>Frequency converters</span></h3>
+      <div class="section_DCS">
+      <div class="edc_tab">
         <p>Electrical equipment for frequency regulation of alternating voltage. The main scope of these devices is changing the speed and torque of asynchronous electrical machines. The principle of operation of control and regulation is based on the dependence of the speed of rotation of the magnetic field on the frequency of the supply voltage. Asynchronous electric motors are widely used as drives for industrial equipment, pumping units, control valves and other devices. The main disadvantage of these electric machines is the constant speed of rotation, high starting currents. With the help of frequency converters, it is possible to eliminate these shortcomings and significantly expand the scope of AC motors.</p>
         <p>My frequency drive maintenance responsibilities include:</p>
         <ul>
@@ -60,11 +67,18 @@
           <li>Communication via PROFINET bus between G120 and S7-300/S7-1200 controller;</li>
           <li>Error diagnosis and troubleshooting;</li>
         </ul>
+        <div class="flex_DCS">
+          <div class="flex_DCS_item TDC"><img src="img/vfd1.jpeg" alt="Top_drive"></div>
+          <div class="flex_DCS_item DW"><img src="img/vfd2.jpeg" alt="Top_drive"></div>
+          <div class="flex_DCS_item MP"><img src="img/vfd3.jpeg" alt="Top_drive"></div>
+        </div>
+      </div>
       </div>
       <!--Frequency converters end-->
       <!--Programmable logic controllers start-->
-      <div class="section">
-        <h3><span>Programmable logic controllers</span></h3>
+      <h3><span>Programmable logic controllers</span></h3>
+      <div class="section_DCS">
+      <div class="edc_tab">
         <p>An important element of the automation system in an industrial enterprise. PLCs are necessary for automatic control of an object in real time. External modules are connected to the PLC input-output channels, which allow collecting and analyzing data, and controlling the operation of the drilling rig.</p>
         <p>My PLC maintenance responsibilities include:</p>
         <ul>
@@ -75,14 +89,20 @@
           <li>Select and configure expansion modules;</li>
           <li>Error diagnosis and troubleshooting;</li>
         </ul>
-      </div>
+        <div class="flex_DCS">
+          <div class="flex_DCS_item TDC"><img src="img/plc1.jpeg" alt="Top_drive"></div>
+          <div class="flex_DCS_item DW"><img src="img/plc2.jpeg" alt="Top_drive"></div>
+          <div class="flex_DCS_item MP"><img src="img/plc3.jpeg" alt="Top_drive"></div>
+        </div>
+    </div>
+    </div>
       <!--Programmable logic controllers end-->
     </main>
     <!--main end-->
     <!--copyright start-->
-    <div class="copyright">
+    <footer>
         &copy; 2022 My Blog. All rights reserved.
-    </div>
+    </footer>
     <!--copyright end-->
   </body>
 </html>
