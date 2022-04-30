@@ -45,7 +45,6 @@ header{
   background-color: rgba(	8,140,55, 0.8) ;
   margin:auto;
   max-width: 770px;
-  /* padding: 10px; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -148,6 +147,23 @@ h3{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.edc_grid{
+  background-color: rgba(217, 213, 210, 0.80);
+  display: grid;
+  grid-template-columns: 2.3fr 6.2fr 1.5fr;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  grid-column-gap: 5px;
+}
+.edc_grid p{
+  margin: 0;
+}
+.item_3{
+  text-align: center;
+}
+
 .edc_tab{
   background-color: rgba(217, 213, 210, 0.80);
 }
@@ -167,20 +183,48 @@ h3{
   border-radius: 3px;
 }
 img{
-  transition: all 1s ease;
+  transition: all 0.25s ease;
 }
 .flex_DCS{
   display: flex;
   grid-gap: 5px;
+  justify-content: space-around;
+}
+
+.flex_DCS_item{
+  flex-basis: 350px;
 }
 .flex_DCS_item img{
   width: 100%;
   border-radius: 3px;
 }
-.flex_DCS_item img:hover{
+.flex_DCS_item:active{
+  position: fixed;
+  bottom: 10%;
+  left: 25%;
+  width: 50%;
+}
+
+.flex_DCS_item:active img:active{
+  transform: scale(1.1,1.1);
+  border-radius: 0px;
+  box-shadow: 2px 5px 10px #3f3f40;
+  cursor: zoom-out;
+}
+.flex_DCS_item:hover{
+  cursor: zoom-in;
+}
+/*
+.DW img:active{
   transform: scale(2,2);
   border-radius: 0px;
+  box-shadow: 2px 5px 10px #3f3f40;
 }
+.MP img:active{
+  transform: scale(2,2) translateX(-50%);
+  border-radius: 0px;
+  box-shadow: 2px 5px 10px #3f3f40;
+} */
 .section_DCS{
   background-image: url(AutomationEngineer.jpg);
   background-size: cover;
@@ -188,3 +232,10 @@ img{
   background-attachment: fixed;
   border-radius: 3px;
 }
+/* .test{
+  width: 10%;
+  height: 10%;
+  background: red;
+  position: fixed;
+  left: 45%;
+} */
