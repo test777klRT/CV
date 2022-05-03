@@ -16,19 +16,27 @@ main{
   margin: auto;
   max-width: 750px;
   padding: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .4);
 }
-nav{
+h1, h2{
+  background: linear-gradient(100deg, rgba(241, 240, 242, 0.4) 10%, rgba(241, 240, 242, 0) 50%);
+  padding-left: 10px;
+  border-radius: 3px;
+}
+/* nav{
   margin: auto;
   font-size: 16px;
   font-weight: normal;
   font-family: 'Roboto', sans-serif;
   background-color: #f1f0f2;
   width: 100%;
-}
+} */
 footer{
+
   font-size: 10px;
   margin:auto;
   max-width: 750px;
+  padding-top: 5px;
 }
 .PNG{
 width: 128px;
@@ -36,20 +44,57 @@ height: 128px;
 }
 .edc_tab video{
   border-radius: 3px;
-
 }
+
 a{
   text-decoration: none;
   color: #0B090D;
+
 }
+header a{
+  color: #f1f0f2;
+  display: block;
+  padding: 0 15px;
+  transition: .4s;
+}
+header a:hover{
+  color: #D9D5D2;
+}
+
 a:hover{
   color: #3f3f40;
 }
 header{
-  background-color: rgba(	8,140,55, 0.8) ;
+  /* background-color: rgba(	8,140,55, 0.8); */
+  background: linear-gradient(-60deg, #088c37 , #0ca694 80% );
   margin:auto;
   max-width: 770px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .4);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.me{
+  min-width: 280px;
+}
+nav ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+}
+.switcher{
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+}
+label{
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: #f1f0f2;
 }
 
 header p{
@@ -58,8 +103,8 @@ header p{
   padding-bottom: 5px;
   margin-left: 10px;
   color: #f1f0f2;
-  font-weight: normal;
-  letter-spacing: 3px;
+  font-weight: 500;
+  letter-spacing: 1px;
   line-height: 2;
   font-size: 20px;
 }
@@ -345,5 +390,44 @@ img{
     max-width: 95%;
     margin: auto;
   }
+
+}
+@media screen and (max-width: 700px), (min-width: 410px) and (min-height: 890px){
+  .open,
+  .close{
+    display: block;
+  }
+  .close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .switcher:checked ~ nav{
+    right: 0;
+  }
+  .open{
+    margin-right: 10px;
+  }
+  nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #088c37 , #0ca694 80% );
+    right: -100%;
+    top: 0;
+    text-align:center;
+    padding: 100px 0;
+    transition: 0.7s;
+    }
+    nav ul{
+      flex-direction: column;
+    }
+    header a{
+      padding: 20px;
+    }
+    header a:hover{
+      background: linear-gradient(100deg, rgba(241, 240, 242, 0.1) 10%, rgba(241, 240, 242, 0) 50%);
+    }
+    }
 
 }
