@@ -382,8 +382,11 @@ img{
   header{
     max-width: 97%;
   }
-  nav{
-    font-size: 2vw;
+  header p{
+    font-size: 4vw;
+  }
+  .nav{
+    font-size: 4vw;
   }
   footer{
     font-size: 0.5vw;
@@ -406,7 +409,7 @@ img{
     right: 0;
   }
   .open{
-    margin-right: 10px;
+    margin-right: 20px;
   }
   nav{
     position: fixed;
@@ -426,7 +429,7 @@ img{
       padding: 20px;
     }
     header a:hover{
-      background: linear-gradient(100deg, rgba(241, 240, 242, 0.1) 10%, rgba(241, 240, 242, 0) 50%);
+      background: linear-gradient(90deg, rgba(241, 240, 242, 0) 20%, rgba(241, 240, 242, 0.1) 50%, rgba(241, 240, 242, 0) 80%);
     }
     }
 
