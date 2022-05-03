@@ -4,17 +4,40 @@
     <meta charset="utf-8">
     <title>My blog</title>
     <link  href="css/master.css" rel="stylesheet">
-    <link  href="css/master.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="shortcut icon"
     href="IMG_20200918_214625_653.ico" type="image/x-icon">
   </head>
   <body>
     <!-- header start -->
         <header>
-            <p>Stanislav Fedenev
+          <div class="me">
+            <p>STANISLAV FEDENEV
+            <br>automation engineer</p>
+          </div>
+            <input class="switcher" type="checkbox" id = "menu">
+            <label class="open" for="menu">
+              <i class="fa fa-bars"></i>
+            </label>
+            <nav>
+              <ul>
+                <li> <a class="nav" href="index.html">Main page</a> </li>
+                <li> <a class="nav" href="My_Education.html">My Education</a> </li>
+              </ul>
+              <label class="close" for="menu">
+                <i class="fa fa-times"></i>
+              </label>
+            </nav>
+            <!-- <p>STANISLAV FEDENEV
             <br>automation engineer</p>
             <nav class="navigation">
               <table>
@@ -23,7 +46,7 @@
                   <td><a href="My_Education.html"><div class="nav_btn">My Education</div></a></td>
                 </tr>
               </table>
-            </nav>
+            </nav> -->
         </header>
     <!-- header end -->
     <!--main start-->
