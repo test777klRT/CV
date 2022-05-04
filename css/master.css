@@ -12,7 +12,6 @@ main{
   font-size: 16px;
   font-weight: normal;
   font-family: 'Roboto', sans-serif;
-  /* margin-top: : auto; */
   margin: auto;
   max-width: 750px;
   padding: 10px;
@@ -23,14 +22,6 @@ h1, h2{
   padding-left: 10px;
   border-radius: 3px;
 }
-/* nav{
-  margin: auto;
-  font-size: 16px;
-  font-weight: normal;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f1f0f2;
-  width: 100%;
-} */
 footer{
 
   font-size: 10px;
@@ -65,7 +56,6 @@ a:hover{
   color: #3f3f40;
 }
 header{
-  /* background-color: rgba(	8,140,55, 0.8); */
   background: linear-gradient(-60deg, #088c37 , #0ca694 80% );
   margin:auto;
   max-width: 770px;
@@ -75,6 +65,10 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.nav_img{
+  display: none;
+
 }
 .me{
   min-width: 280px;
@@ -268,17 +262,6 @@ img{
 .flex_DCS_item:hover{
   cursor: zoom-in;
 }
-/*
-.DW img:active{
-  transform: scale(2,2);
-  border-radius: 0px;
-  box-shadow: 2px 5px 10px #3f3f40;
-}
-.MP img:active{
-  transform: scale(2,2) translateX(-50%);
-  border-radius: 0px;
-  box-shadow: 2px 5px 10px #3f3f40;
-} */
 .section_DCS{
   background-image: url(AutomationEngineer.jpg);
   background-size: cover;
@@ -322,42 +305,7 @@ img{
 
 }
 
-@media screen and (min-width: 820px) and (min-height: 1750px) {
-
-  .edc_grid{
-    grid-template-columns: none;
-  }
-  .edc_caption{
-    display: none;
-  }
-  .item_1{
-    text-align: center;
-    font-weight: bold;
-  }
-  .item_3{
-    padding-top: 10px;
-  }
-  main{
-    max-width: 95%;
-    font-size: 1vw;
-  }
-  .btn_sm{
-    font-size: 2vw;
-  }
-  header{
-    max-width: 97%;
-  }
-  nav{
-    font-size: 2vw;
-  }
-  footer{
-    font-size: 0.5vw;
-    max-width: 95%;
-    margin: auto;
-  }
-
-}
-@media screen and (min-width: 410px) and (min-height: 890px) {
+@media screen and (min-width: 820px) and (min-height: 1750px), (min-width: 410px) and (min-height: 890px) {
 
   .edc_grid{
     grid-template-columns: none;
@@ -377,7 +325,7 @@ img{
     font-size: 2vw;
   }
   .btn_sm{
-    font-size: 2vw;
+    font-size: 4vw;
   }
   header{
     max-width: 97%;
@@ -385,7 +333,61 @@ img{
   header p{
     font-size: 4vw;
   }
-  .nav{
+  nav{
+    font-size: 4vw;
+  }
+  .open, .close{
+    font-size: 6vw;
+  }
+  footer{
+    font-size: 0.5vw;
+    max-width: 95%;
+    margin: auto;
+  }
+  .flex_DCS_item:active{
+    position: fixed;
+    bottom: 40%;
+    left: 15%;
+    width: 70%;
+  }
+
+  .flex_DCS_item:active img:active{
+    transform: scale(1.1,1.1);
+    border-radius: 0px;
+    box-shadow: 2px 5px 10px #3f3f40;
+    cursor: zoom-out;
+  }
+
+}
+/* @media screen and (min-width: 410px) and (min-height: 890px) {
+
+  .edc_grid{
+    grid-template-columns: none;
+  }
+  .edc_caption{
+    display: none;
+  }
+  .item_1{
+    text-align: center;
+    font-weight: bold;
+  }
+  .item_3{
+    padding-top: 10px;
+  }
+  main{
+    max-width: 95%;
+    font-size: 2vw;
+  }
+  .btn_sm{
+    font-size: 4vw;
+  }
+  header{
+    max-width: 97%;
+  }
+  header p{
+    font-size: 4vw;
+  }
+  nav{
     font-size: 4vw;
   }
   footer{
@@ -393,8 +395,21 @@ img{
     max-width: 95%;
     margin: auto;
   }
+  .flex_DCS_item:active{
+    position: fixed;
+    bottom: 40%;
+    left: 15%;
+    width: 70%;
+  }
 
-}
+  .flex_DCS_item:active img:active{
+    transform: scale(1.1,1.1);
+    border-radius: 0px;
+    box-shadow: 2px 5px 10px #3f3f40;
+    cursor: zoom-out;
+  }
+
+} */
 @media screen and (max-width: 700px), (min-width: 410px) and (min-height: 890px){
   .open,
   .close{
@@ -411,16 +426,32 @@ img{
   .open{
     margin-right: 20px;
   }
+
   nav{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #088c37 , #0ca694 80% );
+    background-blend-mode: multiply;
+    background: url(AutomationEngineer.jpg) rgba(0, 140, 55, 0.5) ;
+    background-size: cover;
     right: -100%;
     top: 0;
     text-align:center;
     padding: 100px 0;
     transition: 0.7s;
+    }
+    .flex_DCS_item:active{
+      position: fixed;
+      bottom: 40%;
+      left: 15%;
+      width: 70%;
+    }
+
+    .flex_DCS_item:active img:active{
+      transform: scale(1.1,1.1);
+      border-radius: 0px;
+      box-shadow: 2px 5px 10px #3f3f40;
+      cursor: zoom-out;
     }
     nav ul{
       flex-direction: column;
